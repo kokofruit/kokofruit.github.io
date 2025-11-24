@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Data -->
+    <title>Moth Harper | About</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Stylesheet -->
+    <link href="../stylesheet.css" rel="stylesheet" type="text/css" media="all">
+    <!-- JavaScript -->
+    <script src="../script.js"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="small bg3 tx4 source-code-pro-standard">
+    <!-- Big Name Header -->
+    <div class="name_div c">
+        <a class="tx1 header" href="../index.html">Moth Harper</a>
+    </div>
+
+    <div class="main_content bg2">
+        <!-- Navigation Bar -->
+        <div class=" wide ch navbar_container">
+            <a class="bg5 tx1 c navbar_link" href="./about.html">
+                About
+            </a>
+            <a class="bg3 tx1 c navbar_link" href="./projects.html">
+                Projects
+            </a>
+            <a class="bg3 tx1 c navbar_link" href="./demos.html">
+                Demos
+            </a>
+            <div class="bg2 tx1 c dropdown" onmouseleave="ToggleVisibility('links-dropdown', false)">
+                <button class="dropdown_button bg3 tx1" onclick="ToggleVisibility('links-dropdown')">
+                    Links
+                </button>
+                <div id="links-dropdown" class="dropdown_content bg1 hidden">
+                    <a class="tx3 cv" href="https://github.com/kokofruit" target="_blank">GitHub</a>
+                    <a class="tx3 cv" href="https://www.linkedin.com/in/moth-harper/" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Text -->
+        <div class="c bg1 text_section">
+            <h4 class="bg2 c" onclick="ToggleVisibility('background-section')">Background</h4>
+            <div id="background-section">
+                <p>Located in central Pennsylvania, I started programming when I was fourteen. It was love at first
+                    sight, and I decided to turn that passion into a career. I always enjoy the opportunity to apply my
+                    creative thinking, problem-solve, and work collaboratively.</p>
+                <br>
+            </div>
+
+            <h4 class="bg2 c" onclick="ToggleVisibility('education-section')">Education</h4>
+            <div id="education-section">
+                <p>I am currently attending the Pennsylvania College of Technology in Williamsport, PA. I am pursuing
+                    two Bachelors of Science: Software Development and Information Management, and Game & Simulation
+                    Programming.</p>
+                <br>
+            </div>
+
+            <h4 class="bg2 c" onclick="ToggleVisibility('skills-section')">Skills</h4>
+            <div id="skills-section">
+                <p><strong>Programming Languages:</strong></p>
+                <ul>
+                    <li>Assembly - ★</li>
+                    <li>C# - ★★★</li>
+                    <li>CSS - ★</li>
+                    <li>HTML - ★★</li>
+                    <li>Java - ★★</li>
+                    <li>JavaScript - ★★</li>
+                    <li>Python - ★★★</li>
+                    <li>SQL - ★</li>
+                </ul>
+
+                <p><strong>Game Engines:</strong></p>
+                <ul>
+                    <li>GameMaker Studio - ★</li>
+                    <li>Godot - ★★</li>
+                    <li>PICO-8 - ★</li>
+                    <li>Unity - ★★★</li>
+                </ul>
+
+                <p><strong>Mobile / Web Development:</strong></p>
+                <ul>
+                    <li>Node.js & React Native - ★★</li>
+                    <li>Webpage Development (HTML, CSS, JavaScript) - ★★</li>
+                </ul>
+
+                <p><strong>Operating Systems:</strong></p>
+                <ul>
+                    <li>Windows - ★★★</li>
+                    <li>Linux - ★★</li>
+                </ul>
+
+                <p><strong>Version Control:</strong></p>
+                <ul>
+                    <li>Git Command Line - ★★</li>
+                    <li>GitHub - ★★</li>
+                </ul>
+
+                <p><strong>Productivity Software:</strong></p>
+                <ul>
+                    <li>Microsoft Excel - ★★</li>
+                    <li>Microsoft Word - ★★★</li>
+                    <li>Microsoft OneDrive - ★★★</li>
+                </ul>
+
+                <p><strong>Creativity Software:</strong></p>
+                <ul>
+                    <li>Blender - ★★</li>
+                    <li>Procreate - ★★★</li>
+                </ul>
+
+                <br>
+            </div>
+
+            <h4 class="bg2 c" onclick="ToggleVisibility('contact-section')">Contact Me</h4>
+            <p id="contact-section">Feel free to contact me at <i>mothharper23@gmail.com</i>!</p>
+        </div>
+        <!-- End Text -->
+    </div>
+</body>
+
+</html>

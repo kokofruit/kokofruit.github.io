@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Data -->
+    <title>Moth Harper | Projects</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Stylesheet -->
+    <link href="../stylesheet.css" rel="stylesheet" type="text/css" media="all">
+    <!-- JavaScript -->
+    <script src="../script.js"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Geo:ital@0;1&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Matemasie"
+        rel="stylesheet">
+</head>
+
+<body class="small bg3 tx4 source-code-pro-standard">
+    <!-- Big Name Header -->
+    <div class="name_div c">
+        <a class="tx1 header" href="../index.html">Moth Harper</a>
+    </div>
+
+    <div class="main_content bg2">
+        <!-- Navigation Bar -->
+        <div class=" wide ch navbar_container">
+            <a class="bg3 tx1 c navbar_link" href="./about.html">
+                About
+            </a>
+            <a class="bg5 tx1 c navbar_link" href="./projects.html">
+                Projects
+            </a>
+            <a class="bg3 tx1 c navbar_link" href="./demos.html">
+                Demos
+            </a>
+            <div class="bg2 tx1 c dropdown" onmouseleave="ToggleVisibility('links-dropdown', false)">
+                <button class="dropdown_button bg3 tx1" onclick="ToggleVisibility('links-dropdown')">
+                    Links
+                </button>
+                <div id="links-dropdown" class="dropdown_content bg1 hidden">
+                    <a class="tx3 cv" href="https://github.com/kokofruit" target="_blank">GitHub</a>
+                    <a class="tx3 cv" href="https://www.linkedin.com/in/moth-harper/" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Text -->
+        <div class="c bg1 text_section">
+            <h3 class="bg2 c geo-regular-italic" onclick="ToggleVisibility('morz-section')">M.O.R.Z. Purge</h3>
+            <div id="morz-section">
+                <img src="../images/morz-purge-preview.png" />
+
+                <p><strong>Development Time:</strong></p>
+                <p> September 2025 - Current</p>
+
+                <p><strong>Summary:</strong></p>
+                <p>M.O.R.Z. Purge - the sequel to
+                    <a class="tx3" target="_blank" href="https://gabrielheiser.com/public/morz-demo.html">Project
+                        M.O.R.Z.</a>
+                    - is a first-person shooter that pins you against aggressive alien insectoids. In the abandoned
+                    wastelands left by the people before you, you can find ammo, new guns, and weapon upgrades. Make
+                    your way through the cave system to fight the Broodmother, and put an end to the alien invasion.
+                </p>
+
+                <p><strong>About the Project:</strong></p>
+                <p>This game is being created by myself and six other people. We are making it as part of a
+                    semester-long assignment for out CIT324 class.</p>
+                <p>M.O.R.Z. Purge is being made using Unity 6, which uses C# scripts.</p>
+                <p>Our team uses agile development techniques, such as scum practices.</p>
+                <p>This project utilizes a branched
+                    <a class="tx3" target="_blank" href="https://github.com/kokofruit/MORZ-Purge">GitHub</a>
+                    enviroment for hosting each member's work as well as verison control.
+                </p>
+
+                <p><strong>Contributions:</strong></p>
+                <ul>
+                    <li>Enemy superclass script</li>
+                    <li>Melee and flying enemy scripts</li>
+                    <li>Enemy sprites</li>
+                    <li>Enviromental textures</li>
+                    <li>Pick-up and enemy spawn management</li>
+                    <li>Assisted with prop implementation</li>
+                    <li>Served as Scrum master for the second sprint</li>
+                </ul>
+                <br>
+            </div>
+
+            <h3 class="bg2 c matemasie-regular" onclick="ToggleVisibility('bugfishing-section')">BugFishing</h3>
+            <div id="bugfishing-section">
+                <img src="../images/bugfishing-title.png" />
+
+                <p><strong>Development Time:</strong></p>
+                <p>January 2025 - April 2025</p>
+
+                <img src="../images/bugfishing-reeling.png" />
+
+                <p><strong>Summary:</strong></p>
+                <p>BugFishing is a fishing simulator, but with bugs! Play as a frog making a living by fishing up bugs,
+                    selling your catches, and then upgrading your gear. Discover different species, and keep track of
+                    your learnings in your notebook.
+                </p>
+
+                <img src="../images/bugfishing-shop.png" />
+
+                <p><strong>About the Project:</strong></p>
+                <p>This game was made as an entirely solo project for my CIT216 class.</p>
+                <p>BugFishing was developed using Unity 2022.3.24f1, which uses C# scripting.</p>
+                <p>The development utilized
+                    <a class="tx3" target="_blank" href="https://github.com/kokofruit/BugFishing_1.0">GitHub</a>
+                    version control.
+                </p>
+
+                <img src="../images/bugfishing-notebook.png" />
+
+                <p><strong>Contributions:</strong></p>
+                <p>I created everything other than sound effects and music. This includes:</p>
+                <ul>
+                    <li>Game and inventory management scripts</li>
+                    <li>Scripts for mouse-responsive, randomised system for casting, reeling, and catching bugs</li>
+                    <li>Notebook encyclopedia scripts</li>
+                    <li>Insect 3D models</li>
+                    <li>UI sprites and scripts</li>
+                </ul>
+                <br>
+            </div>
+        </div>
+        <!-- End Text -->
+    </div>
+</body>
+
+</html>

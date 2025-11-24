@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Data -->
+    <title>Moth Harper | Demos</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Stylesheet -->
+    <link href="../stylesheet.css" rel="stylesheet" type="text/css" media="all">
+    <!-- JavaScript -->
+    <script src="../script.js"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Matemasie"
+        rel="stylesheet">
+</head>
+
+<body class="small bg3 tx4 source-code-pro-standard">
+    <!-- Big Name Header -->
+    <div class="name_div c">
+        <a class="tx1 header" href="../index.html">Moth Harper</a>
+    </div>
+
+    <div class="main_content bg2">
+        <!-- Navigation Bar -->
+        <div class=" wide ch navbar_container">
+            <a class="bg3 tx1 c navbar_link" href="./about.html">
+                About
+            </a>
+            <a class="bg3 tx1 c navbar_link" href="./projects.html">
+                Projects
+            </a>
+            <a class="bg5 tx1 c navbar_link" href="./demos.html">
+                Demos
+            </a>
+            <div class="bg2 tx1 c dropdown" onmouseleave="ToggleVisibility('links-dropdown', false)">
+                <button class="dropdown_button bg3 tx1" onclick="ToggleVisibility('links-dropdown')">
+                    Links
+                </button>
+                <div id="links-dropdown" class="dropdown_content bg1 hidden">
+                    <a class="tx3 cv" href="https://github.com/kokofruit" target="_blank">GitHub</a>
+                    <a class="tx3 cv" href="https://www.linkedin.com/in/moth-harper/" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Text -->
+        <div class="c bg1 text_section">
+            <h3 class="bg2 c matemasie-regular" onclick="ToggleVisibility('bugfishing-section')">BugFishing</h3>
+            <div id="bugfishing-section">
+                
+                <img src="../images/bugfishing-title.png" />
+
+                <p><strong>Summary:</strong></p>
+                <p>BugFishing is a fishing simulator, but with bugs! Play as a frog making a living by fishing up bugs,
+                    selling your catches, and then upgrading your gear. Discover different species, and keep track of
+                    your learnings in your notebook.
+                </p>
+                <br>
+            </div>
+        </div>
+        <!-- End Text -->
+    </div>
+</body>
+
+</html>
