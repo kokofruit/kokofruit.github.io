@@ -6,57 +6,44 @@
     <title>Moth Harper | Projects</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <!-- Stylesheet -->
-    <link href="../stylesheet.css" rel="stylesheet" type="text/css" media="all">
-    <!-- JavaScript -->
-    <script src="../script.js"></script>
+    <link href="/stylesheet.css" rel="stylesheet" type="text/css" media="all">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Geo:ital@0;1&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Matemasie"
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900"
         rel="stylesheet">
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/949f4241b0.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="small bg3 tx4 source-code-pro-standard">
-    <!-- Big Name Header -->
-    <div class="name_div c">
-        <a class="tx1 header" href="../index.html">Moth Harper</a>
-    </div>
+<body class="source-code-pro-standard bg2">
+    <!-- Column Container -->
+    <div id="col_container">
 
-    <div class="main_content bg2">
-        <!-- Navigation Bar -->
-        <div class=" wide ch navbar_container">
-            <a class="bg3 tx1 c navbar_link" href="./about.html">
-                About
-            </a>
-            <a class="bg5 tx1 c navbar_link" href="./projects.html">
-                Projects
-            </a>
-            <a class="bg3 tx1 c navbar_link" href="./demos.html">
-                Demos
-            </a>
-            <div class="bg2 tx1 c dropdown" onmouseleave="ToggleVisibility('links-dropdown', false)">
-                <button class="dropdown_button bg3 tx1" onclick="ToggleVisibility('links-dropdown')">
-                    Links
-                </button>
-                <div id="links-dropdown" class="dropdown_content bg1 hidden">
-                    <a class="tx3 cv" href="https://github.com/kokofruit" target="_blank">GitHub</a>
-                    <a class="tx3 cv" href="https://www.linkedin.com/in/moth-harper/" target="_blank">LinkedIn</a>
-                </div>
-            </div>
-        </div>
+        <!-- Nav Panel -->
+        <header id="nav_panel" class="center_all bg3">
+            <h1 id="name_header" class="tx1">Moth <br class="widescreen_only">Harper</h1>
+            <nav id="nav_button_container" class="center_all">
+                <a class="nav_button center_all bg2 tx4" href="/index.html">Home</a>
+                <a class="nav_button center_all bg2 tx4" href="/pages/about.html">About</a>
+                <a class="nav_button center_all bg1 tx4" href="#">Projects</a>
+            </nav>
+        </header>
 
-        <!-- Text -->
-        <div class="c bg1 text_section">
-            <h3 class="bg2 c geo-regular-italic" onclick="ToggleVisibility('morz-section')">M.O.R.Z. Purge</h3>
-            <div id="morz-section">
-                <img src="../assets/images/morz-purge-preview.png" />
+        <!-- Body Panel -->
+        <div id="body_panel" class="center_h">
+            <main id="body_text_box" class="center_h bg1">
 
-                <p><strong>Development Time:</strong></p>
-                <p> September 2025 - Current</p>
+                <!-- MORZ PURGE -->
+                <h2 id="morz-section" class="heading center_all bg3 tx1">M.O.R.Z. Purge</h2>
+                <img src="/images/morz-purge-preview.png" alt="An image from within the DOOM-like game M.O.R.Z. Purge"/>
 
-                <p><strong>Summary:</strong></p>
+                <h3>Development Time:</h3>
+                <p> September 2025 - December 2025</p>
+
+                <h3>Summary:</h3>
                 <p>M.O.R.Z. Purge - the sequel to
                     <a class="tx3" target="_blank" href="https://gabrielheiser.com/public/morz-demo.html">Project
                         M.O.R.Z.</a>
@@ -65,17 +52,17 @@
                     your way through the cave system to fight the Broodmother, and put an end to the alien invasion.
                 </p>
 
-                <p><strong>About the Project:</strong></p>
-                <p>This game is being created by myself and six other people. We are making it as part of a
-                    semester-long assignment for out CIT324 class.</p>
-                <p>M.O.R.Z. Purge is being made using Unity 6, which uses C# scripts.</p>
-                <p>Our team uses agile development techniques, such as scum practices.</p>
-                <p>This project utilizes a branched
+                <h3>About the Project:</h3>
+                <p>This game was created by myself and six other people. We made it as part of a
+                    semester-long assignment for our CIT324 class.</p>
+                <p>M.O.R.Z. Purge was made using Unity 6, which uses C# scripts.</p>
+                <p>Our team practiced agile development techniques, such as scum.</p>
+                <p>This project utilized a branched
                     <a class="tx3" target="_blank" href="https://github.com/kokofruit/MORZ-Purge">GitHub</a>
-                    enviroment for hosting each member's work as well as verison control.
+                    enviroment for hosting each member's work and for verison control.
                 </p>
 
-                <p><strong>Contributions:</strong></p>
+                <h3>Contributions:</h3>
                 <ul>
                     <li>Enemy superclass script</li>
                     <li>Melee and flying enemy scripts</li>
@@ -83,29 +70,29 @@
                     <li>Enviromental textures</li>
                     <li>Pick-up and enemy spawn management</li>
                     <li>Assisted with prop implementation</li>
-                    <li>Served as Scrum master for the second sprint</li>
+                    <li>Served as scrum master for the second sprint</li>
                 </ul>
+
                 <br>
-            </div>
 
-            <h3 class="bg2 c matemasie-regular" onclick="ToggleVisibility('bugfishing-section')">BugFishing</h3>
-            <div id="bugfishing-section">
-                <img src="../assets/images/bugfishing-title.png" />
+                <!-- BugFishing -->
+                <h2 id="bugfishing-section" class="heading center_all bg3 tx1">BugFishing</h2>
+                <img src="/images/bugfishing-title.png" alt="An image of the title screen from my game BugFishing"/>
 
-                <p><strong>Development Time:</strong></p>
+                <h3>Development Time:</h3>
                 <p>January 2025 - April 2025</p>
 
-                <img src="../assets/images/bugfishing-reeling.png" />
+                <img src="/images/bugfishing-reeling.png" alt="An image of the reeling mechanic from my game BugFishing"/>
 
-                <p><strong>Summary:</strong></p>
+                <h3>Summary:</h3>
                 <p>BugFishing is a fishing simulator, but with bugs! Play as a frog making a living by fishing up bugs,
                     selling your catches, and then upgrading your gear. Discover different species, and keep track of
                     your learnings in your notebook.
                 </p>
 
-                <img src="../assets/images/bugfishing-shop.png" />
+                <img src="/images/bugfishing-shop.png" alt="An image of the shop screen from my game BugFishing"/>
 
-                <p><strong>About the Project:</strong></p>
+                <h3>About the Project:</h3>
                 <p>This game was made as an entirely solo project for my CIT216 class.</p>
                 <p>BugFishing was developed using Unity 2022.3.24f1, which uses C# scripting.</p>
                 <p>The development utilized
@@ -113,9 +100,9 @@
                     version control.
                 </p>
 
-                <img src="../assets/images/bugfishing-notebook.png" />
+                <img src="/images/bugfishing-notebook.png" alt="An image of the education section from my game BugFishing"/>
 
-                <p><strong>Contributions:</strong></p>
+                <h3>Contributions:</h3>
                 <p>I created everything other than sound effects and music. This includes:</p>
                 <ul>
                     <li>Game and inventory management scripts</li>
@@ -125,9 +112,18 @@
                     <li>UI sprites and scripts</li>
                 </ul>
                 <br>
-            </div>
+            </main>
         </div>
-        <!-- End Text -->
+
+    </div>
+
+    <!-- Footer -->
+    <div id="footer" class="bg3 center_all">
+        <!-- Links -->
+        <a href="https://github.com/kokofruit" target="_blank"><i class="fa-brands fa-github tx1"></i></a>
+        <a href="https://github.com/kokofruit" target="_blank"><i class="fa-brands fa-linkedin tx1"></i></a>
+        <!-- Copyright -->
+        <p class="tx1">&copy; Moth Harper. All Rights Reserved.</p>
     </div>
 </body>
 

@@ -6,80 +6,76 @@
     <title>Moth Harper</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <!-- Stylesheet -->
-    <link href="./stylesheet.css" rel="stylesheet" type="text/css" media="all">
-    <!-- JavaScript -->
-    <script src="./script.js"></script>
+    <link href="/stylesheet.css" rel="stylesheet" type="text/css" media="all">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Geo:ital@0;1&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900"
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900"
         rel="stylesheet">
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/949f4241b0.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="bg3 tx4 source-code-pro-standard">
-    <!-- Big Name Header -->
-    <div class="name_div c">
-        <h2 class="tx1" style="font-weight: 400;">Moth Harper</h2>
-    </div>
+<body class="source-code-pro-standard bg2">
+    <!-- Column Container -->
+    <div id="col_container">
 
-    <div class="main_content bg2">
-        <!-- Navigation Bar -->
-        <div class=" wide ch navbar_container">
-            <a class="bg3 tx1 c navbar_link" href="./pages/about.html">
-                About
-            </a>
-            <a class="bg3 tx1 c navbar_link" href="./pages/projects.html">
-                Projects
-            </a>
-            <a class="bg3 tx1 c navbar_link" href="./pages/demos.html">
-                Demos
-            </a>
-            <div class="bg2 tx1 c dropdown" onmouseleave="ToggleVisibility('links-dropdown', false)">
-                <button class="dropdown_button bg3 tx1" onclick="ToggleVisibility('links-dropdown')">
-                    Links
-                </button>
-                <div id="links-dropdown" class="dropdown_content bg1 hidden">
-                    <a class="tx3 cv" href="https://github.com/kokofruit" target="_blank">GitHub</a>
-                    <a class="tx3 cv" href="https://www.linkedin.com/in/moth-harper/" target="_blank">LinkedIn</a>
-                </div>
-            </div>
-        </div>
+        <!-- Nav Panel -->
+        <header id="nav_panel" class="center_all bg3">
+            <h1 id="name_header" class="tx1">Moth <br class="widescreen_only">Harper</h1>
+            <nav id="nav_button_container" class="center_all">
+                <a class="nav_button center_all bg1 tx4" href="#">Home</a>
+                <a class="nav_button center_all bg2 tx4" href="/pages/about.html">About</a>
+                <a class="nav_button center_all bg2 tx4" href="/pages/projects.html">Projects</a>
+            </nav>
+        </header>
 
-        <!-- Text -->
-        <div class="c bg1 text_section">
-            <h4 class="bg2 c" onclick="ToggleVisibility('hello-section')">Hello There!</h4>
-            <div id="hello-section">
+        <!-- Body Panel -->
+        <div id="body_panel" class="center_h">
+            <main id="body_text_box" class="center_h bg1">
+
+                <!-- Intro -->
+                <h2 id="hello-there" class="heading center_all bg3 tx1">Hello There!</h2>
                 <p>
                     My name is Moth Harper. I am an aspiring programmer, and I'm currently in my junior year at the
                     Pennsylvania College of Technology. My dream is to create software and develop games, but I love any
                     chance to mess with computers.
                 </p>
-                <br>
-            </div>
 
-            <h4 class="bg2 c" onclick="ToggleVisibility('current-section')">Currently Working On</h4>
-            <div id="current-section">
-                <p class="morz-purge">M.O.R.Z. Purge</p>
+                <br>
+
+                <!-- Current Project -->
+                <h2 id="currently-working-on" class="heading center_all bg3 tx1">Currently Working On</h2>
+                <h3 class="center_tx">BugFishing: <br>Open Waters</h3>
                 <p>
-                    M.O.R.Z. Purge is DOOM-style first person shooter that takes place on the alien plant Zorapterra. As
-                    you make your way through the trecherous caves and abandoned facilities, you'll need to deal with
-                    the space-inhabiting insectoids that drove out the people before you. Find ammo, weapons, and
-                    upgrades - then shoot 'em up!
+                    <i>BugFishing: Open Waters</i> will be a relaxing fishing game, where the fish are bugs! The player
+                    will follow a frog named Jerm as he takes on his grandfrog's old bugfishing gear, including a beat
+                    up airship. Catch bugs, discover various biomes and species, and upgrade your gear, all while
+                    exploring the area and meeting new friends.
                 </p>
                 <p>
-                    This game is part of an assignment for my CIT324 class. I am working on it alongside a team of six
-                    other people. You can find the project's repository
-                    <a class="tx3" target="_blank" href="https://github.com/kokofruit/MORZ-Purge/">here</a>!
+                    This game is meant to be an expansion on my previous project, <i>BugFishing</i>. I plan to remake
+                    the game using the techniques I have since learned, as well as adding a great deal of content.
                 </p>
-                <br>
-            </div>
+                <p>
+                    Because of the larger scope, this game's development will include much more planning and
+                    documentation, which will be published here as progress is made.
+                </p>
 
-            <h4 class="bg2 c" onclick="ToggleVisibility('contact-section')">Contact Me</h4>
-            <p id="contact-section">Feel free to contact me at <i>mothharper23@gmail.com</i>!</p>
+            </main>
         </div>
-        <!-- End Text -->
+
+    </div>
+
+    <!-- Footer -->
+    <div id="footer" class="bg3 center_all">
+        <!-- Links -->
+        <a href="https://github.com/kokofruit" target="_blank"><i class="fa-brands fa-github tx1"></i></a>
+        <a href="https://github.com/kokofruit" target="_blank"><i class="fa-brands fa-linkedin tx1"></i></a>
+        <!-- Copyright -->
+        <p class="tx1">&copy; Moth Harper. All Rights Reserved.</p>
     </div>
 </body>
 

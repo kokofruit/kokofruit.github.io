@@ -6,67 +6,59 @@
     <title>Moth Harper | About</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <!-- Stylesheet -->
-    <link href="../stylesheet.css" rel="stylesheet" type="text/css" media="all">
-    <!-- JavaScript -->
-    <script src="../script.js"></script>
+    <link href="/stylesheet.css" rel="stylesheet" type="text/css" media="all">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900"
         rel="stylesheet">
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/949f4241b0.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="small bg3 tx4 source-code-pro-standard">
-    <!-- Big Name Header -->
-    <div class="name_div c">
-        <a class="tx1 header" href="../index.html">Moth Harper</a>
-    </div>
+<body class="source-code-pro-standard bg2">
+    <!-- Column Container -->
+    <div id="col_container">
 
-    <div class="main_content bg2">
-        <!-- Navigation Bar -->
-        <div class=" wide ch navbar_container">
-            <a class="bg5 tx1 c navbar_link" href="./about.html">
-                About
-            </a>
-            <a class="bg3 tx1 c navbar_link" href="./projects.html">
-                Projects
-            </a>
-            <a class="bg3 tx1 c navbar_link" href="./demos.html">
-                Demos
-            </a>
-            <div class="bg2 tx1 c dropdown" onmouseleave="ToggleVisibility('links-dropdown', false)">
-                <button class="dropdown_button bg3 tx1" onclick="ToggleVisibility('links-dropdown')">
-                    Links
-                </button>
-                <div id="links-dropdown" class="dropdown_content bg1 hidden">
-                    <a class="tx3 cv" href="https://github.com/kokofruit" target="_blank">GitHub</a>
-                    <a class="tx3 cv" href="https://www.linkedin.com/in/moth-harper/" target="_blank">LinkedIn</a>
-                </div>
-            </div>
-        </div>
+        <!-- Nav Panel -->
+        <header id="nav_panel" class="center_all bg3">
+            <h1 id="name_header" class="tx1">Moth <br class="widescreen_only">Harper</h1>
+            <nav id="nav_button_container" class="center_all">
+                <a class="nav_button center_all bg2 tx5" href="/index.html">Home</a>
+                <a class="nav_button center_all bg1 tx5" href="#">About</a>
+                <a class="nav_button center_all bg2 tx5" href="/pages/projects.html">Projects</a>
+            </nav>
+        </header>
 
-        <!-- Text -->
-        <div class="c bg1 text_section">
-            <h4 class="bg2 c" onclick="ToggleVisibility('background-section')">Background</h4>
-            <div id="background-section">
-                <p>Located in central Pennsylvania, I started programming when I was fourteen. It was love at first
+        <!-- Body Panel -->
+        <div id="body_panel" class="center_h">
+            <main id="body_text_box" class="center_h bg1">
+
+                <!-- Background -->
+                <h2 id="background-section" class="heading center_all bg3 tx1">Background</h2>
+                <p>
+                    Located in central Pennsylvania, I started programming when I was fourteen. It was love at first
                     sight, and I decided to turn that passion into a career. I always enjoy the opportunity to apply my
-                    creative thinking, problem-solve, and work collaboratively.</p>
-                <br>
-            </div>
+                    creative thinking, problem-solve, and work collaboratively.
+                </p>
 
-            <h4 class="bg2 c" onclick="ToggleVisibility('education-section')">Education</h4>
-            <div id="education-section">
-                <p>I am currently attending the Pennsylvania College of Technology in Williamsport, PA. I am pursuing
+                <br>
+
+                <!-- Education -->
+                <h2 id="education-section" class="heading center_all bg3 tx1">Education</h2>
+                <p>
+                    I am currently attending the Pennsylvania College of Technology in Williamsport, PA. I am pursuing
                     two Bachelors of Science: Software Development and Information Management, and Game & Simulation
-                    Programming.</p>
-                <br>
-            </div>
+                    Programming.
+                </p>
 
-            <h4 class="bg2 c" onclick="ToggleVisibility('skills-section')">Skills</h4>
-            <div id="skills-section">
-                <p><strong>Programming Languages:</strong></p>
+                <br>
+
+                <!-- Skills -->
+                <h2 id="skills-section" class="heading center_all bg3 tx1">Skills</h2>
+                <h3>Programming Languages:</h3>
                 <ul>
                     <li>Assembly - ★</li>
                     <li>C# - ★★★</li>
@@ -78,7 +70,7 @@
                     <li>SQL - ★</li>
                 </ul>
 
-                <p><strong>Game Engines:</strong></p>
+                <h3>Game Engines:</h3>
                 <ul>
                     <li>GameMaker Studio - ★</li>
                     <li>Godot - ★★</li>
@@ -86,45 +78,59 @@
                     <li>Unity - ★★★</li>
                 </ul>
 
-                <p><strong>Mobile / Web Development:</strong></p>
+                <h3>Mobile / Web Development:</h3>
                 <ul>
                     <li>Node.js & React Native - ★★</li>
                     <li>Webpage Development (HTML, CSS, JavaScript) - ★★</li>
                 </ul>
 
-                <p><strong>Operating Systems:</strong></p>
+                <h3>Operating Systems:</h3>
                 <ul>
                     <li>Windows - ★★★</li>
                     <li>Linux - ★★</li>
                 </ul>
 
-                <p><strong>Version Control:</strong></p>
+                <h3>Version Control:</h3>
                 <ul>
                     <li>Git Command Line - ★★</li>
                     <li>GitHub - ★★</li>
                 </ul>
 
-                <p><strong>Productivity Software:</strong></p>
+                <h3>Productivity Software:</h3>
                 <ul>
                     <li>Microsoft Excel - ★★</li>
                     <li>Microsoft Word - ★★★</li>
                     <li>Microsoft OneDrive - ★★★</li>
                 </ul>
 
-                <p><strong>Creativity Software:</strong></p>
+                <h3>Creativity Software:</h3>
                 <ul>
                     <li>Blender - ★★</li>
                     <li>Procreate - ★★★</li>
                 </ul>
 
                 <br>
-            </div>
 
-            <h4 class="bg2 c" onclick="ToggleVisibility('contact-section')">Contact Me</h4>
-            <p id="contact-section">Feel free to contact me at <i>mothharper23@gmail.com</i>!</p>
+                <!-- Contact -->
+                <h2 id="contact-section" class="heading center_all bg3 tx1">Contact Me</h2>
+                <p>
+                    Feel free to contact me at <a class="tx3" href="mailto:mothharper23@gmail.com">mothharper23@gmail.com</a>!
+                </p>
+
+            </main>
         </div>
-        <!-- End Text -->
+
     </div>
+
+    <!-- Footer -->
+    <div id="footer" class="bg3 center_all">
+        <!-- Links -->
+        <a href="https://github.com/kokofruit" target="_blank"><i class="fa-brands fa-github tx1"></i></a>
+        <a href="https://github.com/kokofruit" target="_blank"><i class="fa-brands fa-linkedin tx1"></i></a>
+        <!-- Copyright -->
+        <p class="tx1">&copy; Moth Harper. All Rights Reserved.</p>
+    </div>
+
 </body>
 
 </html>
